@@ -1,0 +1,6 @@
+framework module Pods_IBM_WatsonTests {
+  umbrella header "Pods-IBM WatsonTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

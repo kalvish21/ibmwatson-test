@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E58D265F91D34851AAA6EFA /* Pods_IBM_WatsonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD48AD80A4C60410CF40D7CC /* Pods_IBM_WatsonTests.framework */; };
+		7492C7381E8EFBF60070956A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492C7371E8EFBF60070956A /* File.swift */; };
+		74994F651E8EFADA003372BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F641E8EFADA003372BF /* AppDelegate.swift */; };
+		74994F671E8EFADA003372BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F661E8EFADA003372BF /* ViewController.swift */; };
+		74994F6A1E8EFADA003372BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74994F681E8EFADA003372BF /* Main.storyboard */; };
+		74994F6C1E8EFADA003372BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74994F6B1E8EFADA003372BF /* Assets.xcassets */; };
+		74994F6F1E8EFADA003372BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74994F6D1E8EFADA003372BF /* LaunchScreen.storyboard */; };
+		74994F7A1E8EFADA003372BF /* IBM_WatsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F791E8EFADA003372BF /* IBM_WatsonTests.swift */; };
+		74994F851E8EFADA003372BF /* IBM_WatsonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F841E8EFADA003372BF /* IBM_WatsonUITests.swift */; };
+		799387DFADEE47D92A4CD023 /* Pods_IBM_Watson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D7D60F8D2CCD012269E22F /* Pods_IBM_Watson.framework */; };
+		986A695B85BD976676CF4625 /* Pods_IBM_WatsonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B62B115E5D69D87BA9CD13 /* Pods_IBM_WatsonUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74994F761E8EFADA003372BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74994F591E8EFADA003372BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74994F601E8EFADA003372BF;
+			remoteInfo = "IBM Watson";
+		};
+		74994F811E8EFADA003372BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74994F591E8EFADA003372BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74994F601E8EFADA003372BF;
+			remoteInfo = "IBM Watson";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19D8E302180F1B0CA07F5C7F /* Pods-IBM Watson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM Watson.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBM Watson/Pods-IBM Watson.release.xcconfig"; sourceTree = "<group>"; };
+		2392DEA8C9563A7ECB1B8D7C /* Pods-IBM WatsonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonTests/Pods-IBM WatsonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23A40F4D09C4382F6DF06EDC /* Pods-IBM Watson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM Watson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBM Watson/Pods-IBM Watson.debug.xcconfig"; sourceTree = "<group>"; };
+		4984F1A21C656B8801AA659D /* Pods-IBM WatsonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonUITests/Pods-IBM WatsonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EE975F6EEEA4AD9EF1273E3 /* Pods-IBM WatsonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonUITests/Pods-IBM WatsonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7492C7371E8EFBF60070956A /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Code/File.swift; sourceTree = "<group>"; };
+		74994F611E8EFADA003372BF /* IBM Watson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBM Watson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74994F641E8EFADA003372BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74994F661E8EFADA003372BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74994F691E8EFADA003372BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74994F6B1E8EFADA003372BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74994F6E1E8EFADA003372BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74994F701E8EFADA003372BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74994F751E8EFADA003372BF /* IBM WatsonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBM WatsonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74994F791E8EFADA003372BF /* IBM_WatsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_WatsonTests.swift; sourceTree = "<group>"; };
+		74994F7B1E8EFADA003372BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74994F801E8EFADA003372BF /* IBM WatsonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBM WatsonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74994F841E8EFADA003372BF /* IBM_WatsonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_WatsonUITests.swift; sourceTree = "<group>"; };
+		74994F861E8EFADA003372BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D7D60F8D2CCD012269E22F /* Pods_IBM_Watson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM_Watson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD48AD80A4C60410CF40D7CC /* Pods_IBM_WatsonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM_WatsonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F324A77B3964524E27F819EE /* Pods-IBM WatsonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonTests/Pods-IBM WatsonTests.release.xcconfig"; sourceTree = "<group>"; };
+		F6B62B115E5D69D87BA9CD13 /* Pods_IBM_WatsonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM_WatsonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74994F5E1E8EFADA003372BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799387DFADEE47D92A4CD023 /* Pods_IBM_Watson.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74994F721E8EFADA003372BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E58D265F91D34851AAA6EFA /* Pods_IBM_WatsonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74994F7D1E8EFADA003372BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986A695B85BD976676CF4625 /* Pods_IBM_WatsonUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7492C7361E8EFBE60070956A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7492C7371E8EFBF60070956A /* File.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		74994F581E8EFADA003372BF = {
+			isa = PBXGroup;
+			children = (
+				74994F631E8EFADA003372BF /* IBM Watson */,
+				74994F781E8EFADA003372BF /* IBM WatsonTests */,
+				74994F831E8EFADA003372BF /* IBM WatsonUITests */,
+				74994F621E8EFADA003372BF /* Products */,
+				7E68529A9B9DC0D4CD994C41 /* Pods */,
+				FE9012CCBA5D8595D282C6C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		74994F621E8EFADA003372BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74994F611E8EFADA003372BF /* IBM Watson.app */,
+				74994F751E8EFADA003372BF /* IBM WatsonTests.xctest */,
+				74994F801E8EFADA003372BF /* IBM WatsonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74994F631E8EFADA003372BF /* IBM Watson */ = {
+			isa = PBXGroup;
+			children = (
+				7492C7361E8EFBE60070956A /* Common */,
+				74994F921E8EFB43003372BF /* ViewControllers */,
+				74994F641E8EFADA003372BF /* AppDelegate.swift */,
+				74994F681E8EFADA003372BF /* Main.storyboard */,
+				74994F6B1E8EFADA003372BF /* Assets.xcassets */,
+				74994F6D1E8EFADA003372BF /* LaunchScreen.storyboard */,
+				74994F701E8EFADA003372BF /* Info.plist */,
+			);
+			path = "IBM Watson";
+			sourceTree = "<group>";
+		};
+		74994F781E8EFADA003372BF /* IBM WatsonTests */ = {
+			isa = PBXGroup;
+			children = (
+				74994F791E8EFADA003372BF /* IBM_WatsonTests.swift */,
+				74994F7B1E8EFADA003372BF /* Info.plist */,
+			);
+			path = "IBM WatsonTests";
+			sourceTree = "<group>";
+		};
+		74994F831E8EFADA003372BF /* IBM WatsonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74994F841E8EFADA003372BF /* IBM_WatsonUITests.swift */,
+				74994F861E8EFADA003372BF /* Info.plist */,
+			);
+			path = "IBM WatsonUITests";
+			sourceTree = "<group>";
+		};
+		74994F921E8EFB43003372BF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74994F661E8EFADA003372BF /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7E68529A9B9DC0D4CD994C41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23A40F4D09C4382F6DF06EDC /* Pods-IBM Watson.debug.xcconfig */,
+				19D8E302180F1B0CA07F5C7F /* Pods-IBM Watson.release.xcconfig */,
+				2392DEA8C9563A7ECB1B8D7C /* Pods-IBM WatsonTests.debug.xcconfig */,
+				F324A77B3964524E27F819EE /* Pods-IBM WatsonTests.release.xcconfig */,
+				4984F1A21C656B8801AA659D /* Pods-IBM WatsonUITests.debug.xcconfig */,
+				6EE975F6EEEA4AD9EF1273E3 /* Pods-IBM WatsonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE9012CCBA5D8595D282C6C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D60F8D2CCD012269E22F /* Pods_IBM_Watson.framework */,
+				DD48AD80A4C60410CF40D7CC /* Pods_IBM_WatsonTests.framework */,
+				F6B62B115E5D69D87BA9CD13 /* Pods_IBM_WatsonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74994F601E8EFADA003372BF /* IBM Watson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74994F891E8EFADA003372BF /* Build configuration list for PBXNativeTarget "IBM Watson" */;
+			buildPhases = (
+				E1355F1F4DFBBF34D221E935 /* [CP] Check Pods Manifest.lock */,
+				74994F5D1E8EFADA003372BF /* Sources */,
+				74994F5E1E8EFADA003372BF /* Frameworks */,
+				74994F5F1E8EFADA003372BF /* Resources */,
+				296C7E34149A1C05096D2965 /* [CP] Embed Pods Frameworks */,
+				EE704A416491AF2445EC58C8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IBM Watson";
+			productName = "IBM Watson";
+			productReference = 74994F611E8EFADA003372BF /* IBM Watson.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74994F741E8EFADA003372BF /* IBM WatsonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74994F8C1E8EFADA003372BF /* Build configuration list for PBXNativeTarget "IBM WatsonTests" */;
+			buildPhases = (
+				4D4C7E928EDCFFC44690D8E7 /* [CP] Check Pods Manifest.lock */,
+				74994F711E8EFADA003372BF /* Sources */,
+				74994F721E8EFADA003372BF /* Frameworks */,
+				74994F731E8EFADA003372BF /* Resources */,
+				661796A7E7E84E585AA7877F /* [CP] Embed Pods Frameworks */,
+				975DEFAAB8EE7DD9F7E163D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74994F771E8EFADA003372BF /* PBXTargetDependency */,
+			);
+			name = "IBM WatsonTests";
+			productName = "IBM WatsonTests";
+			productReference = 74994F751E8EFADA003372BF /* IBM WatsonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74994F7F1E8EFADA003372BF /* IBM WatsonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74994F8F1E8EFADA003372BF /* Build configuration list for PBXNativeTarget "IBM WatsonUITests" */;
+			buildPhases = (
+				34A16A28D4FD61E645145C68 /* [CP] Check Pods Manifest.lock */,
+				74994F7C1E8EFADA003372BF /* Sources */,
+				74994F7D1E8EFADA003372BF /* Frameworks */,
+				74994F7E1E8EFADA003372BF /* Resources */,
+				05DA06C739213F1B4E4041C2 /* [CP] Embed Pods Frameworks */,
+				5687494AD98467C62DF44919 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74994F821E8EFADA003372BF /* PBXTargetDependency */,
+			);
+			name = "IBM WatsonUITests";
+			productName = "IBM WatsonUITests";
+			productReference = 74994F801E8EFADA003372BF /* IBM WatsonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74994F591E8EFADA003372BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kalyan Vishnubhatla";
+				TargetAttributes = {
+					74994F601E8EFADA003372BF = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = PZ7B25RE27;
+						ProvisioningStyle = Automatic;
+					};
+					74994F741E8EFADA003372BF = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = PZ7B25RE27;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 74994F601E8EFADA003372BF;
+					};
+					74994F7F1E8EFADA003372BF = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = PZ7B25RE27;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 74994F601E8EFADA003372BF;
+					};
+				};
+			};
+			buildConfigurationList = 74994F5C1E8EFADA003372BF /* Build configuration list for PBXProject "IBM Watson" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74994F581E8EFADA003372BF;
+			productRefGroup = 74994F621E8EFADA003372BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74994F601E8EFADA003372BF /* IBM Watson */,
+				74994F741E8EFADA003372BF /* IBM WatsonTests */,
+				74994F7F1E8EFADA003372BF /* IBM WatsonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74994F5F1E8EFADA003372BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74994F6F1E8EFADA003372BF /* LaunchScreen.storyboard in Resources */,
+				74994F6C1E8EFADA003372BF /* Assets.xcassets in Resources */,
+				74994F6A1E8EFADA003372BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74994F731E8EFADA003372BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74994F7E1E8EFADA003372BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05DA06C739213F1B4E4041C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBM WatsonUITests/Pods-IBM WatsonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		296C7E34149A1C05096D2965 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBM Watson/Pods-IBM Watson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34A16A28D4FD61E645145C68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D4C7E928EDCFFC44690D8E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5687494AD98467C62DF44919 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBM WatsonUITests/Pods-IBM WatsonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		661796A7E7E84E585AA7877F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBM WatsonTests/Pods-IBM WatsonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		975DEFAAB8EE7DD9F7E163D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBM WatsonTests/Pods-IBM WatsonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1355F1F4DFBBF34D221E935 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE704A416491AF2445EC58C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBM Watson/Pods-IBM Watson-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74994F5D1E8EFADA003372BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74994F671E8EFADA003372BF /* ViewController.swift in Sources */,
+				7492C7381E8EFBF60070956A /* File.swift in Sources */,
+				74994F651E8EFADA003372BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74994F711E8EFADA003372BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74994F7A1E8EFADA003372BF /* IBM_WatsonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74994F7C1E8EFADA003372BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74994F851E8EFADA003372BF /* IBM_WatsonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74994F771E8EFADA003372BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74994F601E8EFADA003372BF /* IBM Watson */;
+			targetProxy = 74994F761E8EFADA003372BF /* PBXContainerItemProxy */;
+		};
+		74994F821E8EFADA003372BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74994F601E8EFADA003372BF /* IBM Watson */;
+			targetProxy = 74994F811E8EFADA003372BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74994F681E8EFADA003372BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74994F691E8EFADA003372BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74994F6D1E8EFADA003372BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74994F6E1E8EFADA003372BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74994F871E8EFADA003372BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74994F881E8EFADA003372BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74994F8A1E8EFADA003372BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A40F4D09C4382F6DF06EDC /* Pods-IBM Watson.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PZ7B25RE27;
+				INFOPLIST_FILE = "IBM Watson/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-Watson";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		74994F8B1E8EFADA003372BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D8E302180F1B0CA07F5C7F /* Pods-IBM Watson.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PZ7B25RE27;
+				INFOPLIST_FILE = "IBM Watson/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-Watson";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		74994F8D1E8EFADA003372BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2392DEA8C9563A7ECB1B8D7C /* Pods-IBM WatsonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PZ7B25RE27;
+				INFOPLIST_FILE = "IBM WatsonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-WatsonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBM Watson.app/IBM Watson";
+			};
+			name = Debug;
+		};
+		74994F8E1E8EFADA003372BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F324A77B3964524E27F819EE /* Pods-IBM WatsonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PZ7B25RE27;
+				INFOPLIST_FILE = "IBM WatsonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-WatsonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBM Watson.app/IBM Watson";
+			};
+			name = Release;
+		};
+		74994F901E8EFADA003372BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4984F1A21C656B8801AA659D /* Pods-IBM WatsonUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PZ7B25RE27;
+				INFOPLIST_FILE = "IBM WatsonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-WatsonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "IBM Watson";
+			};
+			name = Debug;
+		};
+		74994F911E8EFADA003372BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE975F6EEEA4AD9EF1273E3 /* Pods-IBM WatsonUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PZ7B25RE27;
+				INFOPLIST_FILE = "IBM WatsonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-WatsonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "IBM Watson";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74994F5C1E8EFADA003372BF /* Build configuration list for PBXProject "IBM Watson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74994F871E8EFADA003372BF /* Debug */,
+				74994F881E8EFADA003372BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74994F891E8EFADA003372BF /* Build configuration list for PBXNativeTarget "IBM Watson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74994F8A1E8EFADA003372BF /* Debug */,
+				74994F8B1E8EFADA003372BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74994F8C1E8EFADA003372BF /* Build configuration list for PBXNativeTarget "IBM WatsonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74994F8D1E8EFADA003372BF /* Debug */,
+				74994F8E1E8EFADA003372BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74994F8F1E8EFADA003372BF /* Build configuration list for PBXNativeTarget "IBM WatsonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74994F901E8EFADA003372BF /* Debug */,
+				74994F911E8EFADA003372BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74994F591E8EFADA003372BF /* Project object */;
+}
