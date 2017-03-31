@@ -18,6 +18,8 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.title = "Search Yelp"
+        
         self.searchController.dimsBackgroundDuringPresentation = false
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.searchBar.setShowsCancelButton(false, animated: true)
@@ -62,17 +64,22 @@ class ViewController: UITableViewController, UISearchBarDelegate {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.imageView?.clipsToBounds = true
+        cell.imageView?.contentMode = .center
         
         let business = self.results[indexPath.row]
         cell.textLabel?.text = business.name
-        
+
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         
-        
+        let business = self.results[indexPath.row]
+        let controller = DetailTableViewController(style: .grouped)
+        controller.business = business
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 

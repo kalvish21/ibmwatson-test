@@ -16,6 +16,7 @@
 		74994F6F1E8EFADA003372BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74994F6D1E8EFADA003372BF /* LaunchScreen.storyboard */; };
 		74994F7A1E8EFADA003372BF /* IBM_WatsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F791E8EFADA003372BF /* IBM_WatsonTests.swift */; };
 		74994F851E8EFADA003372BF /* IBM_WatsonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F841E8EFADA003372BF /* IBM_WatsonUITests.swift */; };
+		74B1788F1E8F0734009ACB47 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1788E1E8F0734009ACB47 /* DetailTableViewController.swift */; };
 		799387DFADEE47D92A4CD023 /* Pods_IBM_Watson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D7D60F8D2CCD012269E22F /* Pods_IBM_Watson.framework */; };
 		986A695B85BD976676CF4625 /* Pods_IBM_WatsonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B62B115E5D69D87BA9CD13 /* Pods_IBM_WatsonUITests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		74994F801E8EFADA003372BF /* IBM WatsonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBM WatsonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74994F841E8EFADA003372BF /* IBM_WatsonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_WatsonUITests.swift; sourceTree = "<group>"; };
 		74994F861E8EFADA003372BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74B1788E1E8F0734009ACB47 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = Code/DetailTableViewController.swift; sourceTree = "<group>"; };
 		D8D7D60F8D2CCD012269E22F /* Pods_IBM_Watson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM_Watson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD48AD80A4C60410CF40D7CC /* Pods_IBM_WatsonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM_WatsonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F324A77B3964524E27F819EE /* Pods-IBM WatsonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonTests/Pods-IBM WatsonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		74994F921E8EFB43003372BF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				74B1788E1E8F0734009ACB47 /* DetailTableViewController.swift */,
 				74994F661E8EFADA003372BF /* ViewController.swift */,
 			);
 			name = ViewControllers;
@@ -468,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B1788F1E8F0734009ACB47 /* DetailTableViewController.swift in Sources */,
 				74994F671E8EFADA003372BF /* ViewController.swift in Sources */,
 				7492C7381E8EFBF60070956A /* File.swift in Sources */,
 				74994F651E8EFADA003372BF /* AppDelegate.swift in Sources */,
