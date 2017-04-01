@@ -8,24 +8,38 @@
 
 import UIKit
 import YelpAPI
+import SDWebImage
 
 class DetailTableViewController: UITableViewController {
     
     var business : YLPBusiness!
     var reviews : [YLPReview] = []
+    
+    private lazy var header : UIView = {
+        var view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 150))
+        
+        let size = CGFloat(75)
+        var imageView = UIImageView(frame: CGRect(x: (self.view.frame.size.width - size) / 2, y: (150 - size) / 2, width: size, height: size))
+        imageView.image = UIImage(named: "noimage.jpg")
+        imageView.layer.cornerRadius = size / 2
+        imageView.clipsToBounds = true
+        
+        if self.business.imageURL != nil {
+            imageView.sd_setImage(with: self.business.imageURL!)
+        }
+        
+        view.addSubview(imageView)
+        
+        return view
+    } ()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         self.title = self.business.name
         
         self.tableView.register(UINib(nibName: "ReviewCellTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        self.tableView.tableHeaderView = self.header
         
         let delegate = UIApplication.shared.delegate as! AppDelegate
         delegate.client.reviewsForBusiness(withId: self.business.identifier, completionHandler: { (search, error) in

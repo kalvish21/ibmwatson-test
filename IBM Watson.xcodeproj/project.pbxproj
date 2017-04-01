@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E58D265F91D34851AAA6EFA /* Pods_IBM_WatsonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD48AD80A4C60410CF40D7CC /* Pods_IBM_WatsonTests.framework */; };
+		743286311E90107400D844E2 /* noimage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 743286301E90107400D844E2 /* noimage@2x.jpg */; };
 		747629411E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747629401E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework */; };
 		747629421E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747629401E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7492C7381E8EFBF60070956A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492C7371E8EFBF60070956A /* File.swift */; };
@@ -69,6 +70,7 @@
 		23A40F4D09C4382F6DF06EDC /* Pods-IBM Watson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM Watson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBM Watson/Pods-IBM Watson.debug.xcconfig"; sourceTree = "<group>"; };
 		4984F1A21C656B8801AA659D /* Pods-IBM WatsonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonUITests/Pods-IBM WatsonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6EE975F6EEEA4AD9EF1273E3 /* Pods-IBM WatsonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonUITests/Pods-IBM WatsonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		743286301E90107400D844E2 /* noimage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "noimage@2x.jpg"; path = "Images/noimage@2x.jpg"; sourceTree = "<group>"; };
 		747629401E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageUnderstandingV1.framework; path = Carthage/Build/iOS/NaturalLanguageUnderstandingV1.framework; sourceTree = "<group>"; };
 		7492C7371E8EFBF60070956A /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Code/File.swift; sourceTree = "<group>"; };
 		74994F611E8EFADA003372BF /* IBM Watson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBM Watson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7432862F1E90105C00D844E2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				743286301E90107400D844E2 /* noimage@2x.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		7492C7361E8EFBE60070956A /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +261,7 @@
 				74994F6B1E8EFADA003372BF /* Assets.xcassets */,
 				74994F6D1E8EFADA003372BF /* LaunchScreen.storyboard */,
 				74994F701E8EFADA003372BF /* Info.plist */,
+				7432862F1E90105C00D844E2 /* Images */,
 			);
 			path = "IBM Watson";
 			sourceTree = "<group>";
@@ -516,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74994F6F1E8EFADA003372BF /* LaunchScreen.storyboard in Resources */,
+				743286311E90107400D844E2 /* noimage@2x.jpg in Resources */,
 				74B178941E8F0CC9009ACB47 /* ReviewCellTableViewCell.xib in Resources */,
 				74994F6C1E8EFADA003372BF /* Assets.xcassets in Resources */,
 				74994F6A1E8EFADA003372BF /* Main.storyboard in Resources */,

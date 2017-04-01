@@ -15,6 +15,9 @@ class ReviewViewController: UIViewController {
 
     var review : YLPReview!
     
+    var sentiment : String!
+    var sentiment_score : Double!
+        
     @IBOutlet weak var reviewTextView: UITextView!
     @IBOutlet weak var sentimentLabel: UILabel!
     
@@ -37,10 +40,38 @@ class ReviewViewController: UIViewController {
             print(error)
         }
         naturalLanguageUnderstanding.analyzeContent(withParameters: parameters, failure: failure) {
-            results in 
-            print (results)
+            results in
             
-            print(results.emotion?.document?.emotion?.anger)
+            self.sentiment = "anger"
+            self.sentiment_score = results.emotion?.document?.emotion?.anger!
+            
+            // Disgust
+            if results.emotion!.document!.emotion!.disgust! > self.sentiment_score {
+                self.sentiment_score = results.emotion?.document?.emotion?.disgust!
+                self.sentiment = "disgust"
+            }
+            
+            // Fear
+            if results.emotion!.document!.emotion!.fear! > self.sentiment_score {
+                self.sentiment_score = results.emotion?.document?.emotion?.fear!
+                self.sentiment = "fear"
+            }
+            
+            // Joy
+            if results.emotion!.document!.emotion!.joy! > self.sentiment_score {
+                self.sentiment_score = results.emotion?.document?.emotion?.joy!
+                self.sentiment = "joy"
+            }
+            
+            // Sadness
+            if results.emotion!.document!.emotion!.sadness! > self.sentiment_score {
+                self.sentiment_score = results.emotion?.document?.emotion?.sadness!
+                self.sentiment = "sadness"
+            }
+            
+            DispatchQueue.main.async {
+                self.sentimentLabel.text = self.sentiment
+            }
         }
     }
 
