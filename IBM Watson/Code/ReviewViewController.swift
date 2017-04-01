@@ -8,7 +8,6 @@
 
 import UIKit
 import YelpAPI
-import ConversationV1
 import NaturalLanguageUnderstandingV1
 
 class ReviewViewController: UIViewController {
