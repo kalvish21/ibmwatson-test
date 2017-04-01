@@ -28,16 +28,19 @@ class ReviewViewController: UIViewController {
         
         let username = "e17eb501-3267-47ec-a7a4-a3d88fb1a5b1"
         let password = "gnSrjh0od5vu"
-        let naturalLanguageUnderstanding = NaturalLanguageUnderstanding(username: username, password: password, version: "2016-05-17")
+        let naturalLanguageUnderstanding = NaturalLanguageUnderstanding(username: username, password: password, version: "2017-02-27")
         print (naturalLanguageUnderstanding.serviceURL)
-        let textToAnalyze = self.review.excerpt
-        let parameters = Parameters(features: Features(), text: textToAnalyze)
+        let text = self.review.excerpt
+        let features = Features(concepts: ConceptsOptions(limit: 5), emotion: EmotionOptions(document: true, targets: nil), sentiment: SentimentOptions(document: true, targets: nil))
+        let parameters = Parameters(features: features, text: text, returnAnalyzedText: true)
         let failure = { (error: Error) in
             print(error)
         }
         naturalLanguageUnderstanding.analyzeContent(withParameters: parameters, failure: failure) {
             results in 
             print (results)
+            
+            print(results.emotion?.document?.emotion?.anger)
         }
     }
 
