@@ -25,7 +25,7 @@ class DetailTableViewController: UITableViewController {
         
         self.title = self.business.name
         
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        self.tableView.register(UINib(nibName: "ReviewCellTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         
         let delegate = UIApplication.shared.delegate as! AppDelegate
         delegate.client.reviewsForBusiness(withId: self.business.identifier, completionHandler: { (search, error) in
@@ -56,10 +56,29 @@ class DetailTableViewController: UITableViewController {
         return self.reviews.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ReviewCellTableViewCell
+        
+        let review = self.reviews[indexPath.row]
+        cell.reviewText.text = review.excerpt
         
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let review = self.reviews[indexPath.row]
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "reviews") as! ReviewViewController
+        controller.review = review
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+        
+    }
 }

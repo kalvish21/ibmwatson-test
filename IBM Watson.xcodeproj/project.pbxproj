@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1E58D265F91D34851AAA6EFA /* Pods_IBM_WatsonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD48AD80A4C60410CF40D7CC /* Pods_IBM_WatsonTests.framework */; };
+		747629411E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747629401E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework */; };
+		747629421E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747629401E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7492C7381E8EFBF60070956A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7492C7371E8EFBF60070956A /* File.swift */; };
+		749432921E8F35A800EB0223 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F3B9CE1E8F2BD00041D4D1 /* RestKit.framework */; };
+		749432931E8F35A800EB0223 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74F3B9CE1E8F2BD00041D4D1 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74994F651E8EFADA003372BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F641E8EFADA003372BF /* AppDelegate.swift */; };
 		74994F671E8EFADA003372BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F661E8EFADA003372BF /* ViewController.swift */; };
 		74994F6A1E8EFADA003372BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74994F681E8EFADA003372BF /* Main.storyboard */; };
@@ -17,6 +21,11 @@
 		74994F7A1E8EFADA003372BF /* IBM_WatsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F791E8EFADA003372BF /* IBM_WatsonTests.swift */; };
 		74994F851E8EFADA003372BF /* IBM_WatsonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74994F841E8EFADA003372BF /* IBM_WatsonUITests.swift */; };
 		74B1788F1E8F0734009ACB47 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1788E1E8F0734009ACB47 /* DetailTableViewController.swift */; };
+		74B178931E8F0CC9009ACB47 /* ReviewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B178911E8F0CC9009ACB47 /* ReviewCellTableViewCell.swift */; };
+		74B178941E8F0CC9009ACB47 /* ReviewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74B178921E8F0CC9009ACB47 /* ReviewCellTableViewCell.xib */; };
+		74B40C6D1E8F123600A2E0C1 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B40C6C1E8F123600A2E0C1 /* ReviewViewController.swift */; };
+		74F3B9CB1E8F2BA20041D4D1 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F3B9CA1E8F2BA20041D4D1 /* ConversationV1.framework */; };
+		74F3B9CC1E8F2BA20041D4D1 /* ConversationV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74F3B9CA1E8F2BA20041D4D1 /* ConversationV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		799387DFADEE47D92A4CD023 /* Pods_IBM_Watson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D7D60F8D2CCD012269E22F /* Pods_IBM_Watson.framework */; };
 		986A695B85BD976676CF4625 /* Pods_IBM_WatsonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B62B115E5D69D87BA9CD13 /* Pods_IBM_WatsonUITests.framework */; };
 /* End PBXBuildFile section */
@@ -38,12 +47,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		74F3B9CD1E8F2BA20041D4D1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74F3B9CC1E8F2BA20041D4D1 /* ConversationV1.framework in Embed Frameworks */,
+				749432931E8F35A800EB0223 /* RestKit.framework in Embed Frameworks */,
+				747629421E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		19D8E302180F1B0CA07F5C7F /* Pods-IBM Watson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM Watson.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBM Watson/Pods-IBM Watson.release.xcconfig"; sourceTree = "<group>"; };
 		2392DEA8C9563A7ECB1B8D7C /* Pods-IBM WatsonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonTests/Pods-IBM WatsonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		23A40F4D09C4382F6DF06EDC /* Pods-IBM Watson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM Watson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBM Watson/Pods-IBM Watson.debug.xcconfig"; sourceTree = "<group>"; };
 		4984F1A21C656B8801AA659D /* Pods-IBM WatsonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonUITests/Pods-IBM WatsonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6EE975F6EEEA4AD9EF1273E3 /* Pods-IBM WatsonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonUITests/Pods-IBM WatsonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		747629401E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageUnderstandingV1.framework; path = Carthage/Build/iOS/NaturalLanguageUnderstandingV1.framework; sourceTree = "<group>"; };
 		7492C7371E8EFBF60070956A /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Code/File.swift; sourceTree = "<group>"; };
 		74994F611E8EFADA003372BF /* IBM Watson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBM Watson.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74994F641E8EFADA003372BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +85,91 @@
 		74994F841E8EFADA003372BF /* IBM_WatsonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_WatsonUITests.swift; sourceTree = "<group>"; };
 		74994F861E8EFADA003372BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B1788E1E8F0734009ACB47 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = Code/DetailTableViewController.swift; sourceTree = "<group>"; };
+		74B178911E8F0CC9009ACB47 /* ReviewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewCellTableViewCell.swift; path = Code/ReviewCellTableViewCell.swift; sourceTree = "<group>"; };
+		74B178921E8F0CC9009ACB47 /* ReviewCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReviewCellTableViewCell.xib; path = Code/ReviewCellTableViewCell.xib; sourceTree = "<group>"; };
+		74B40C6C1E8F123600A2E0C1 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewViewController.swift; path = Code/ReviewViewController.swift; sourceTree = "<group>"; };
+		74F3B8B41E8F253B0041D4D1 /* 2B0A8180-8B28-3DCE-9B57-7524D4981C96.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "2B0A8180-8B28-3DCE-9B57-7524D4981C96.bcsymbolmap"; path = "Carthage/Build/iOS/2B0A8180-8B28-3DCE-9B57-7524D4981C96.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8B51E8F253B0041D4D1 /* 2FA832F3-5E54-3C4A-9118-419DDF71B203.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "2FA832F3-5E54-3C4A-9118-419DDF71B203.bcsymbolmap"; path = "Carthage/Build/iOS/2FA832F3-5E54-3C4A-9118-419DDF71B203.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8B61E8F253B0041D4D1 /* 6C61B127-0B33-319E-A52E-3452EAB341C0.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "6C61B127-0B33-319E-A52E-3452EAB341C0.bcsymbolmap"; path = "Carthage/Build/iOS/6C61B127-0B33-319E-A52E-3452EAB341C0.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8B71E8F253B0041D4D1 /* 6CBE395A-8AAD-39DA-AD7E-A9570C9E1125.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "6CBE395A-8AAD-39DA-AD7E-A9570C9E1125.bcsymbolmap"; path = "Carthage/Build/iOS/6CBE395A-8AAD-39DA-AD7E-A9570C9E1125.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8B81E8F253B0041D4D1 /* 6E01D15D-B857-30C9-B21E-2212E7F321EA.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "6E01D15D-B857-30C9-B21E-2212E7F321EA.bcsymbolmap"; path = "Carthage/Build/iOS/6E01D15D-B857-30C9-B21E-2212E7F321EA.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8B91E8F253B0041D4D1 /* 8C7838D9-A97E-3730-80DB-BB55B8E6308C.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "8C7838D9-A97E-3730-80DB-BB55B8E6308C.bcsymbolmap"; path = "Carthage/Build/iOS/8C7838D9-A97E-3730-80DB-BB55B8E6308C.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8BA1E8F253B0041D4D1 /* 8C138602-18A9-3F3C-8C47-C9C71E805ABA.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "8C138602-18A9-3F3C-8C47-C9C71E805ABA.bcsymbolmap"; path = "Carthage/Build/iOS/8C138602-18A9-3F3C-8C47-C9C71E805ABA.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8BB1E8F253B0041D4D1 /* 10DDF8B8-C0BD-3766-B213-96C16F640F82.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "10DDF8B8-C0BD-3766-B213-96C16F640F82.bcsymbolmap"; path = "Carthage/Build/iOS/10DDF8B8-C0BD-3766-B213-96C16F640F82.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8BC1E8F253B0041D4D1 /* 18CE88E4-FB21-3DBD-9000-BB53A4987A66.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "18CE88E4-FB21-3DBD-9000-BB53A4987A66.bcsymbolmap"; path = "Carthage/Build/iOS/18CE88E4-FB21-3DBD-9000-BB53A4987A66.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8BD1E8F253B0041D4D1 /* 20AE55C7-2E78-3A37-86A0-F3DCDC6395DE.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "20AE55C7-2E78-3A37-86A0-F3DCDC6395DE.bcsymbolmap"; path = "Carthage/Build/iOS/20AE55C7-2E78-3A37-86A0-F3DCDC6395DE.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8BE1E8F253B0041D4D1 /* 22AAF00A-5622-370E-9EA0-70DFAEE0CFC9.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "22AAF00A-5622-370E-9EA0-70DFAEE0CFC9.bcsymbolmap"; path = "Carthage/Build/iOS/22AAF00A-5622-370E-9EA0-70DFAEE0CFC9.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8BF1E8F253B0041D4D1 /* 33EB6DAD-D665-36FA-B968-0A49C4407663.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "33EB6DAD-D665-36FA-B968-0A49C4407663.bcsymbolmap"; path = "Carthage/Build/iOS/33EB6DAD-D665-36FA-B968-0A49C4407663.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C01E8F253B0041D4D1 /* 64A51F8E-2C66-3B0C-A87A-6A7A9CEE12CE.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "64A51F8E-2C66-3B0C-A87A-6A7A9CEE12CE.bcsymbolmap"; path = "Carthage/Build/iOS/64A51F8E-2C66-3B0C-A87A-6A7A9CEE12CE.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C11E8F253B0041D4D1 /* 71B774C4-2CA9-397F-B5E0-DDDC7DEA0AB3.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "71B774C4-2CA9-397F-B5E0-DDDC7DEA0AB3.bcsymbolmap"; path = "Carthage/Build/iOS/71B774C4-2CA9-397F-B5E0-DDDC7DEA0AB3.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C21E8F253B0041D4D1 /* 78A11631-4872-3D4E-8864-336C6122F014.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "78A11631-4872-3D4E-8864-336C6122F014.bcsymbolmap"; path = "Carthage/Build/iOS/78A11631-4872-3D4E-8864-336C6122F014.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C31E8F253B0041D4D1 /* 83DB2A65-5BDB-3F63-8258-C07B609501C8.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "83DB2A65-5BDB-3F63-8258-C07B609501C8.bcsymbolmap"; path = "Carthage/Build/iOS/83DB2A65-5BDB-3F63-8258-C07B609501C8.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C41E8F253B0041D4D1 /* 0383B8B7-E43D-3CF5-AA8B-24E876043E7D.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "0383B8B7-E43D-3CF5-AA8B-24E876043E7D.bcsymbolmap"; path = "Carthage/Build/iOS/0383B8B7-E43D-3CF5-AA8B-24E876043E7D.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C51E8F253B0041D4D1 /* 4292E5DA-2F01-36EE-8690-D9AAD86689A5.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "4292E5DA-2F01-36EE-8690-D9AAD86689A5.bcsymbolmap"; path = "Carthage/Build/iOS/4292E5DA-2F01-36EE-8690-D9AAD86689A5.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C61E8F253B0041D4D1 /* 40413FAD-4BDF-3EA2-841F-6A3298178A33.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "40413FAD-4BDF-3EA2-841F-6A3298178A33.bcsymbolmap"; path = "Carthage/Build/iOS/40413FAD-4BDF-3EA2-841F-6A3298178A33.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C71E8F253B0041D4D1 /* 65283CB6-E931-3180-95C5-0C7AFA53BCD4.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "65283CB6-E931-3180-95C5-0C7AFA53BCD4.bcsymbolmap"; path = "Carthage/Build/iOS/65283CB6-E931-3180-95C5-0C7AFA53BCD4.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C81E8F253B0041D4D1 /* 524647EA-A13E-3366-8CB5-4BF2B5496E9B.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "524647EA-A13E-3366-8CB5-4BF2B5496E9B.bcsymbolmap"; path = "Carthage/Build/iOS/524647EA-A13E-3366-8CB5-4BF2B5496E9B.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8C91E8F253B0041D4D1 /* 692144AE-9D45-3980-8FD4-4DE4B16AE4F1.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "692144AE-9D45-3980-8FD4-4DE4B16AE4F1.bcsymbolmap"; path = "Carthage/Build/iOS/692144AE-9D45-3980-8FD4-4DE4B16AE4F1.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8CA1E8F253B0041D4D1 /* 9819971B-B35B-32D7-AA10-2CE6339831A9.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "9819971B-B35B-32D7-AA10-2CE6339831A9.bcsymbolmap"; path = "Carthage/Build/iOS/9819971B-B35B-32D7-AA10-2CE6339831A9.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8CB1E8F253B0041D4D1 /* A4F13744-BCCD-3310-9467-6C3DDF00C188.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "A4F13744-BCCD-3310-9467-6C3DDF00C188.bcsymbolmap"; path = "Carthage/Build/iOS/A4F13744-BCCD-3310-9467-6C3DDF00C188.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8CC1E8F253B0041D4D1 /* A3039D33-9458-3CBD-A038-CF4139366206.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "A3039D33-9458-3CBD-A038-CF4139366206.bcsymbolmap"; path = "Carthage/Build/iOS/A3039D33-9458-3CBD-A038-CF4139366206.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8CD1E8F253B0041D4D1 /* AE1008F2-2254-3DCC-8B78-9C5E80BF48FB.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "AE1008F2-2254-3DCC-8B78-9C5E80BF48FB.bcsymbolmap"; path = "Carthage/Build/iOS/AE1008F2-2254-3DCC-8B78-9C5E80BF48FB.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8CE1E8F253B0041D4D1 /* AlchemyDataNewsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyDataNewsV1.framework; path = Carthage/Build/iOS/AlchemyDataNewsV1.framework; sourceTree = "<group>"; };
+		74F3B8CF1E8F253B0041D4D1 /* AlchemyDataNewsV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AlchemyDataNewsV1.framework.dSYM; path = Carthage/Build/iOS/AlchemyDataNewsV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8D01E8F253B0041D4D1 /* AlchemyLanguageV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AlchemyLanguageV1.framework.dSYM; path = Carthage/Build/iOS/AlchemyLanguageV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8D11E8F253B0041D4D1 /* AlchemyVisionV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyVisionV1.framework; path = Carthage/Build/iOS/AlchemyVisionV1.framework; sourceTree = "<group>"; };
+		74F3B8D21E8F253B0041D4D1 /* AlchemyVisionV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = AlchemyVisionV1.framework.dSYM; path = Carthage/Build/iOS/AlchemyVisionV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8D31E8F253B0041D4D1 /* B5ED1D10-6E1C-3477-8C42-5FE07A6AB55D.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "B5ED1D10-6E1C-3477-8C42-5FE07A6AB55D.bcsymbolmap"; path = "Carthage/Build/iOS/B5ED1D10-6E1C-3477-8C42-5FE07A6AB55D.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8D41E8F253B0041D4D1 /* BDDFE196-91F0-3EB9-917C-BF88C748E851.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "BDDFE196-91F0-3EB9-917C-BF88C748E851.bcsymbolmap"; path = "Carthage/Build/iOS/BDDFE196-91F0-3EB9-917C-BF88C748E851.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8D51E8F253B0041D4D1 /* C325F838-973C-3D28-B28A-53EDA576DAC7.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "C325F838-973C-3D28-B28A-53EDA576DAC7.bcsymbolmap"; path = "Carthage/Build/iOS/C325F838-973C-3D28-B28A-53EDA576DAC7.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8D61E8F253B0041D4D1 /* CA72DDE3-0CBE-3B24-B55C-5EA3ADE7A51E.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "CA72DDE3-0CBE-3B24-B55C-5EA3ADE7A51E.bcsymbolmap"; path = "Carthage/Build/iOS/CA72DDE3-0CBE-3B24-B55C-5EA3ADE7A51E.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8D71E8F253B0041D4D1 /* CAB11B38-97D2-3904-A475-FC1A66CAC4C9.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "CAB11B38-97D2-3904-A475-FC1A66CAC4C9.bcsymbolmap"; path = "Carthage/Build/iOS/CAB11B38-97D2-3904-A475-FC1A66CAC4C9.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8D81E8F253B0041D4D1 /* CBAC47DC-8AF5-3190-83E3-CD4CC239D435.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "CBAC47DC-8AF5-3190-83E3-CD4CC239D435.bcsymbolmap"; path = "Carthage/Build/iOS/CBAC47DC-8AF5-3190-83E3-CD4CC239D435.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8D91E8F253B0041D4D1 /* ConversationV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ConversationV1.framework.dSYM; path = Carthage/Build/iOS/ConversationV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8DA1E8F253B0041D4D1 /* D57BD951-E1E8-3058-9A3C-B508646CCD09.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "D57BD951-E1E8-3058-9A3C-B508646CCD09.bcsymbolmap"; path = "Carthage/Build/iOS/D57BD951-E1E8-3058-9A3C-B508646CCD09.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8DB1E8F253B0041D4D1 /* D77F94A0-47D4-324E-8D8B-C0E9E5AD8732.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "D77F94A0-47D4-324E-8D8B-C0E9E5AD8732.bcsymbolmap"; path = "Carthage/Build/iOS/D77F94A0-47D4-324E-8D8B-C0E9E5AD8732.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8DC1E8F253B0041D4D1 /* D8811DA0-7C37-3FBA-9933-A58D01DC88E5.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "D8811DA0-7C37-3FBA-9933-A58D01DC88E5.bcsymbolmap"; path = "Carthage/Build/iOS/D8811DA0-7C37-3FBA-9933-A58D01DC88E5.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8DD1E8F253B0041D4D1 /* DEB59524-663E-3F00-A19B-B3ACA884831B.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DEB59524-663E-3F00-A19B-B3ACA884831B.bcsymbolmap"; path = "Carthage/Build/iOS/DEB59524-663E-3F00-A19B-B3ACA884831B.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8DE1E8F253B0041D4D1 /* DF3C8E1D-5C3B-3920-B672-D52BCB279B26.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DF3C8E1D-5C3B-3920-B672-D52BCB279B26.bcsymbolmap"; path = "Carthage/Build/iOS/DF3C8E1D-5C3B-3920-B672-D52BCB279B26.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8DF1E8F253B0041D4D1 /* DialogV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DialogV1.framework; path = Carthage/Build/iOS/DialogV1.framework; sourceTree = "<group>"; };
+		74F3B8E01E8F253B0041D4D1 /* DialogV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = DialogV1.framework.dSYM; path = Carthage/Build/iOS/DialogV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8E11E8F253B0041D4D1 /* DiscoveryV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscoveryV1.framework; path = Carthage/Build/iOS/DiscoveryV1.framework; sourceTree = "<group>"; };
+		74F3B8E21E8F253B0041D4D1 /* DiscoveryV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = DiscoveryV1.framework.dSYM; path = Carthage/Build/iOS/DiscoveryV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8E31E8F253B0041D4D1 /* DocumentConversionV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DocumentConversionV1.framework; path = Carthage/Build/iOS/DocumentConversionV1.framework; sourceTree = "<group>"; };
+		74F3B8E41E8F253B0041D4D1 /* DocumentConversionV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = DocumentConversionV1.framework.dSYM; path = Carthage/Build/iOS/DocumentConversionV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8E51E8F253B0041D4D1 /* E4A44DA0-38F0-3D15-96F8-0714ACEADF12.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "E4A44DA0-38F0-3D15-96F8-0714ACEADF12.bcsymbolmap"; path = "Carthage/Build/iOS/E4A44DA0-38F0-3D15-96F8-0714ACEADF12.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8E61E8F253B0041D4D1 /* E91EB56E-A490-3428-8FFD-1B6175EDD248.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "E91EB56E-A490-3428-8FFD-1B6175EDD248.bcsymbolmap"; path = "Carthage/Build/iOS/E91EB56E-A490-3428-8FFD-1B6175EDD248.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8E71E8F253B0041D4D1 /* F6603AE1-3098-3F84-A74E-264EDA4BCD62.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "F6603AE1-3098-3F84-A74E-264EDA4BCD62.bcsymbolmap"; path = "Carthage/Build/iOS/F6603AE1-3098-3F84-A74E-264EDA4BCD62.bcsymbolmap"; sourceTree = "<group>"; };
+		74F3B8E81E8F253B0041D4D1 /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = "<group>"; };
+		74F3B8E91E8F253B0041D4D1 /* LanguageTranslatorV2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = LanguageTranslatorV2.framework.dSYM; path = Carthage/Build/iOS/LanguageTranslatorV2.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8EA1E8F253B0041D4D1 /* NaturalLanguageClassifierV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageClassifierV1.framework; path = Carthage/Build/iOS/NaturalLanguageClassifierV1.framework; sourceTree = "<group>"; };
+		74F3B8EB1E8F253B0041D4D1 /* NaturalLanguageClassifierV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = NaturalLanguageClassifierV1.framework.dSYM; path = Carthage/Build/iOS/NaturalLanguageClassifierV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8EC1E8F253B0041D4D1 /* NaturalLanguageUnderstandingV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageUnderstandingV1.framework; path = Carthage/Build/iOS/NaturalLanguageUnderstandingV1.framework; sourceTree = "<group>"; };
+		74F3B8ED1E8F253B0041D4D1 /* NaturalLanguageUnderstandingV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = NaturalLanguageUnderstandingV1.framework.dSYM; path = Carthage/Build/iOS/NaturalLanguageUnderstandingV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8EE1E8F253B0041D4D1 /* PersonalityInsightsV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersonalityInsightsV2.framework; path = Carthage/Build/iOS/PersonalityInsightsV2.framework; sourceTree = "<group>"; };
+		74F3B8EF1E8F253B0041D4D1 /* PersonalityInsightsV2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = PersonalityInsightsV2.framework.dSYM; path = Carthage/Build/iOS/PersonalityInsightsV2.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8F01E8F253B0041D4D1 /* PersonalityInsightsV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersonalityInsightsV3.framework; path = Carthage/Build/iOS/PersonalityInsightsV3.framework; sourceTree = "<group>"; };
+		74F3B8F11E8F253B0041D4D1 /* PersonalityInsightsV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = PersonalityInsightsV3.framework.dSYM; path = Carthage/Build/iOS/PersonalityInsightsV3.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8F21E8F253B0041D4D1 /* RelationshipExtractionV1Beta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelationshipExtractionV1Beta.framework; path = Carthage/Build/iOS/RelationshipExtractionV1Beta.framework; sourceTree = "<group>"; };
+		74F3B8F31E8F253B0041D4D1 /* RelationshipExtractionV1Beta.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RelationshipExtractionV1Beta.framework.dSYM; path = Carthage/Build/iOS/RelationshipExtractionV1Beta.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8F41E8F253B0041D4D1 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		74F3B8F51E8F253B0041D4D1 /* RestKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RestKit.framework.dSYM; path = Carthage/Build/iOS/RestKit.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8F61E8F253B0041D4D1 /* RetrieveAndRankV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RetrieveAndRankV1.framework; path = Carthage/Build/iOS/RetrieveAndRankV1.framework; sourceTree = "<group>"; };
+		74F3B8F71E8F253B0041D4D1 /* RetrieveAndRankV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RetrieveAndRankV1.framework.dSYM; path = Carthage/Build/iOS/RetrieveAndRankV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8F81E8F253B0041D4D1 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		74F3B8F91E8F253B0041D4D1 /* SpeechToTextV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SpeechToTextV1.framework.dSYM; path = Carthage/Build/iOS/SpeechToTextV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8FA1E8F253B0041D4D1 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		74F3B8FB1E8F253B0041D4D1 /* TextToSpeechV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = TextToSpeechV1.framework.dSYM; path = Carthage/Build/iOS/TextToSpeechV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8FC1E8F253B0041D4D1 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
+		74F3B8FD1E8F253B0041D4D1 /* ToneAnalyzerV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ToneAnalyzerV3.framework.dSYM; path = Carthage/Build/iOS/ToneAnalyzerV3.framework.dSYM; sourceTree = "<group>"; };
+		74F3B8FE1E8F253B0041D4D1 /* TradeoffAnalyticsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TradeoffAnalyticsV1.framework; path = Carthage/Build/iOS/TradeoffAnalyticsV1.framework; sourceTree = "<group>"; };
+		74F3B8FF1E8F253B0041D4D1 /* TradeoffAnalyticsV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = TradeoffAnalyticsV1.framework.dSYM; path = Carthage/Build/iOS/TradeoffAnalyticsV1.framework.dSYM; sourceTree = "<group>"; };
+		74F3B9001E8F253B0041D4D1 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		74F3B9011E8F253B0041D4D1 /* VisualRecognitionV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = VisualRecognitionV3.framework.dSYM; path = Carthage/Build/iOS/VisualRecognitionV3.framework.dSYM; sourceTree = "<group>"; };
+		74F3B9CA1E8F2BA20041D4D1 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Carthage/Build/iOS/ConversationV1.framework; sourceTree = "<group>"; };
+		74F3B9CE1E8F2BD00041D4D1 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		74FE49BF1E8F23DA006A56CA /* AlchemyLanguageV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyLanguageV1.framework; path = Carthage/Build/iOS/AlchemyLanguageV1.framework; sourceTree = "<group>"; };
+		74FE49C11E8F247F006A56CA /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Carthage/Build/iOS/ConversationV1.framework; sourceTree = "<group>"; };
 		D8D7D60F8D2CCD012269E22F /* Pods_IBM_Watson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM_Watson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD48AD80A4C60410CF40D7CC /* Pods_IBM_WatsonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM_WatsonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F324A77B3964524E27F819EE /* Pods-IBM WatsonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM WatsonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBM WatsonTests/Pods-IBM WatsonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +181,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747629411E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework in Frameworks */,
+				74F3B9CB1E8F2BA20041D4D1 /* ConversationV1.framework in Frameworks */,
 				799387DFADEE47D92A4CD023 /* Pods_IBM_Watson.framework in Frameworks */,
+				749432921E8F35A800EB0223 /* RestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +218,9 @@
 		74994F581E8EFADA003372BF = {
 			isa = PBXGroup;
 			children = (
+				747629401E8F40350000ACB9 /* NaturalLanguageUnderstandingV1.framework */,
+				74F3B9CE1E8F2BD00041D4D1 /* RestKit.framework */,
+				74F3B9CA1E8F2BA20041D4D1 /* ConversationV1.framework */,
 				74994F631E8EFADA003372BF /* IBM Watson */,
 				74994F781E8EFADA003372BF /* IBM WatsonTests */,
 				74994F831E8EFADA003372BF /* IBM WatsonUITests */,
@@ -127,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				7492C7361E8EFBE60070956A /* Common */,
+				74B178901E8F0C88009ACB47 /* CustomView */,
 				74994F921E8EFB43003372BF /* ViewControllers */,
 				74994F641E8EFADA003372BF /* AppDelegate.swift */,
 				74994F681E8EFADA003372BF /* Main.storyboard */,
@@ -159,9 +277,19 @@
 			isa = PBXGroup;
 			children = (
 				74B1788E1E8F0734009ACB47 /* DetailTableViewController.swift */,
+				74B40C6C1E8F123600A2E0C1 /* ReviewViewController.swift */,
 				74994F661E8EFADA003372BF /* ViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74B178901E8F0C88009ACB47 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				74B178911E8F0CC9009ACB47 /* ReviewCellTableViewCell.swift */,
+				74B178921E8F0CC9009ACB47 /* ReviewCellTableViewCell.xib */,
+			);
+			name = CustomView;
 			sourceTree = "<group>";
 		};
 		7E68529A9B9DC0D4CD994C41 /* Pods */ = {
@@ -180,6 +308,86 @@
 		FE9012CCBA5D8595D282C6C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				74F3B8B41E8F253B0041D4D1 /* 2B0A8180-8B28-3DCE-9B57-7524D4981C96.bcsymbolmap */,
+				74F3B8B51E8F253B0041D4D1 /* 2FA832F3-5E54-3C4A-9118-419DDF71B203.bcsymbolmap */,
+				74F3B8B61E8F253B0041D4D1 /* 6C61B127-0B33-319E-A52E-3452EAB341C0.bcsymbolmap */,
+				74F3B8B71E8F253B0041D4D1 /* 6CBE395A-8AAD-39DA-AD7E-A9570C9E1125.bcsymbolmap */,
+				74F3B8B81E8F253B0041D4D1 /* 6E01D15D-B857-30C9-B21E-2212E7F321EA.bcsymbolmap */,
+				74F3B8B91E8F253B0041D4D1 /* 8C7838D9-A97E-3730-80DB-BB55B8E6308C.bcsymbolmap */,
+				74F3B8BA1E8F253B0041D4D1 /* 8C138602-18A9-3F3C-8C47-C9C71E805ABA.bcsymbolmap */,
+				74F3B8BB1E8F253B0041D4D1 /* 10DDF8B8-C0BD-3766-B213-96C16F640F82.bcsymbolmap */,
+				74F3B8BC1E8F253B0041D4D1 /* 18CE88E4-FB21-3DBD-9000-BB53A4987A66.bcsymbolmap */,
+				74F3B8BD1E8F253B0041D4D1 /* 20AE55C7-2E78-3A37-86A0-F3DCDC6395DE.bcsymbolmap */,
+				74F3B8BE1E8F253B0041D4D1 /* 22AAF00A-5622-370E-9EA0-70DFAEE0CFC9.bcsymbolmap */,
+				74F3B8BF1E8F253B0041D4D1 /* 33EB6DAD-D665-36FA-B968-0A49C4407663.bcsymbolmap */,
+				74F3B8C01E8F253B0041D4D1 /* 64A51F8E-2C66-3B0C-A87A-6A7A9CEE12CE.bcsymbolmap */,
+				74F3B8C11E8F253B0041D4D1 /* 71B774C4-2CA9-397F-B5E0-DDDC7DEA0AB3.bcsymbolmap */,
+				74F3B8C21E8F253B0041D4D1 /* 78A11631-4872-3D4E-8864-336C6122F014.bcsymbolmap */,
+				74F3B8C31E8F253B0041D4D1 /* 83DB2A65-5BDB-3F63-8258-C07B609501C8.bcsymbolmap */,
+				74F3B8C41E8F253B0041D4D1 /* 0383B8B7-E43D-3CF5-AA8B-24E876043E7D.bcsymbolmap */,
+				74F3B8C51E8F253B0041D4D1 /* 4292E5DA-2F01-36EE-8690-D9AAD86689A5.bcsymbolmap */,
+				74F3B8C61E8F253B0041D4D1 /* 40413FAD-4BDF-3EA2-841F-6A3298178A33.bcsymbolmap */,
+				74F3B8C71E8F253B0041D4D1 /* 65283CB6-E931-3180-95C5-0C7AFA53BCD4.bcsymbolmap */,
+				74F3B8C81E8F253B0041D4D1 /* 524647EA-A13E-3366-8CB5-4BF2B5496E9B.bcsymbolmap */,
+				74F3B8C91E8F253B0041D4D1 /* 692144AE-9D45-3980-8FD4-4DE4B16AE4F1.bcsymbolmap */,
+				74F3B8CA1E8F253B0041D4D1 /* 9819971B-B35B-32D7-AA10-2CE6339831A9.bcsymbolmap */,
+				74F3B8CB1E8F253B0041D4D1 /* A4F13744-BCCD-3310-9467-6C3DDF00C188.bcsymbolmap */,
+				74F3B8CC1E8F253B0041D4D1 /* A3039D33-9458-3CBD-A038-CF4139366206.bcsymbolmap */,
+				74F3B8CD1E8F253B0041D4D1 /* AE1008F2-2254-3DCC-8B78-9C5E80BF48FB.bcsymbolmap */,
+				74F3B8CE1E8F253B0041D4D1 /* AlchemyDataNewsV1.framework */,
+				74F3B8CF1E8F253B0041D4D1 /* AlchemyDataNewsV1.framework.dSYM */,
+				74F3B8D01E8F253B0041D4D1 /* AlchemyLanguageV1.framework.dSYM */,
+				74F3B8D11E8F253B0041D4D1 /* AlchemyVisionV1.framework */,
+				74F3B8D21E8F253B0041D4D1 /* AlchemyVisionV1.framework.dSYM */,
+				74F3B8D31E8F253B0041D4D1 /* B5ED1D10-6E1C-3477-8C42-5FE07A6AB55D.bcsymbolmap */,
+				74F3B8D41E8F253B0041D4D1 /* BDDFE196-91F0-3EB9-917C-BF88C748E851.bcsymbolmap */,
+				74F3B8D51E8F253B0041D4D1 /* C325F838-973C-3D28-B28A-53EDA576DAC7.bcsymbolmap */,
+				74F3B8D61E8F253B0041D4D1 /* CA72DDE3-0CBE-3B24-B55C-5EA3ADE7A51E.bcsymbolmap */,
+				74F3B8D71E8F253B0041D4D1 /* CAB11B38-97D2-3904-A475-FC1A66CAC4C9.bcsymbolmap */,
+				74F3B8D81E8F253B0041D4D1 /* CBAC47DC-8AF5-3190-83E3-CD4CC239D435.bcsymbolmap */,
+				74F3B8D91E8F253B0041D4D1 /* ConversationV1.framework.dSYM */,
+				74F3B8DA1E8F253B0041D4D1 /* D57BD951-E1E8-3058-9A3C-B508646CCD09.bcsymbolmap */,
+				74F3B8DB1E8F253B0041D4D1 /* D77F94A0-47D4-324E-8D8B-C0E9E5AD8732.bcsymbolmap */,
+				74F3B8DC1E8F253B0041D4D1 /* D8811DA0-7C37-3FBA-9933-A58D01DC88E5.bcsymbolmap */,
+				74F3B8DD1E8F253B0041D4D1 /* DEB59524-663E-3F00-A19B-B3ACA884831B.bcsymbolmap */,
+				74F3B8DE1E8F253B0041D4D1 /* DF3C8E1D-5C3B-3920-B672-D52BCB279B26.bcsymbolmap */,
+				74F3B8DF1E8F253B0041D4D1 /* DialogV1.framework */,
+				74F3B8E01E8F253B0041D4D1 /* DialogV1.framework.dSYM */,
+				74F3B8E11E8F253B0041D4D1 /* DiscoveryV1.framework */,
+				74F3B8E21E8F253B0041D4D1 /* DiscoveryV1.framework.dSYM */,
+				74F3B8E31E8F253B0041D4D1 /* DocumentConversionV1.framework */,
+				74F3B8E41E8F253B0041D4D1 /* DocumentConversionV1.framework.dSYM */,
+				74F3B8E51E8F253B0041D4D1 /* E4A44DA0-38F0-3D15-96F8-0714ACEADF12.bcsymbolmap */,
+				74F3B8E61E8F253B0041D4D1 /* E91EB56E-A490-3428-8FFD-1B6175EDD248.bcsymbolmap */,
+				74F3B8E71E8F253B0041D4D1 /* F6603AE1-3098-3F84-A74E-264EDA4BCD62.bcsymbolmap */,
+				74F3B8E81E8F253B0041D4D1 /* LanguageTranslatorV2.framework */,
+				74F3B8E91E8F253B0041D4D1 /* LanguageTranslatorV2.framework.dSYM */,
+				74F3B8EA1E8F253B0041D4D1 /* NaturalLanguageClassifierV1.framework */,
+				74F3B8EB1E8F253B0041D4D1 /* NaturalLanguageClassifierV1.framework.dSYM */,
+				74F3B8EC1E8F253B0041D4D1 /* NaturalLanguageUnderstandingV1.framework */,
+				74F3B8ED1E8F253B0041D4D1 /* NaturalLanguageUnderstandingV1.framework.dSYM */,
+				74F3B8EE1E8F253B0041D4D1 /* PersonalityInsightsV2.framework */,
+				74F3B8EF1E8F253B0041D4D1 /* PersonalityInsightsV2.framework.dSYM */,
+				74F3B8F01E8F253B0041D4D1 /* PersonalityInsightsV3.framework */,
+				74F3B8F11E8F253B0041D4D1 /* PersonalityInsightsV3.framework.dSYM */,
+				74F3B8F21E8F253B0041D4D1 /* RelationshipExtractionV1Beta.framework */,
+				74F3B8F31E8F253B0041D4D1 /* RelationshipExtractionV1Beta.framework.dSYM */,
+				74F3B8F41E8F253B0041D4D1 /* RestKit.framework */,
+				74F3B8F51E8F253B0041D4D1 /* RestKit.framework.dSYM */,
+				74F3B8F61E8F253B0041D4D1 /* RetrieveAndRankV1.framework */,
+				74F3B8F71E8F253B0041D4D1 /* RetrieveAndRankV1.framework.dSYM */,
+				74F3B8F81E8F253B0041D4D1 /* SpeechToTextV1.framework */,
+				74F3B8F91E8F253B0041D4D1 /* SpeechToTextV1.framework.dSYM */,
+				74F3B8FA1E8F253B0041D4D1 /* TextToSpeechV1.framework */,
+				74F3B8FB1E8F253B0041D4D1 /* TextToSpeechV1.framework.dSYM */,
+				74F3B8FC1E8F253B0041D4D1 /* ToneAnalyzerV3.framework */,
+				74F3B8FD1E8F253B0041D4D1 /* ToneAnalyzerV3.framework.dSYM */,
+				74F3B8FE1E8F253B0041D4D1 /* TradeoffAnalyticsV1.framework */,
+				74F3B8FF1E8F253B0041D4D1 /* TradeoffAnalyticsV1.framework.dSYM */,
+				74F3B9001E8F253B0041D4D1 /* VisualRecognitionV3.framework */,
+				74F3B9011E8F253B0041D4D1 /* VisualRecognitionV3.framework.dSYM */,
+				74FE49C11E8F247F006A56CA /* ConversationV1.framework */,
+				74FE49BF1E8F23DA006A56CA /* AlchemyLanguageV1.framework */,
 				D8D7D60F8D2CCD012269E22F /* Pods_IBM_Watson.framework */,
 				DD48AD80A4C60410CF40D7CC /* Pods_IBM_WatsonTests.framework */,
 				F6B62B115E5D69D87BA9CD13 /* Pods_IBM_WatsonUITests.framework */,
@@ -200,6 +408,7 @@
 				74994F5F1E8EFADA003372BF /* Resources */,
 				296C7E34149A1C05096D2965 /* [CP] Embed Pods Frameworks */,
 				EE704A416491AF2445EC58C8 /* [CP] Copy Pods Resources */,
+				74F3B9CD1E8F2BA20041D4D1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74994F6F1E8EFADA003372BF /* LaunchScreen.storyboard in Resources */,
+				74B178941E8F0CC9009ACB47 /* ReviewCellTableViewCell.xib in Resources */,
 				74994F6C1E8EFADA003372BF /* Assets.xcassets in Resources */,
 				74994F6A1E8EFADA003372BF /* Main.storyboard in Resources */,
 			);
@@ -473,7 +683,9 @@
 			files = (
 				74B1788F1E8F0734009ACB47 /* DetailTableViewController.swift in Sources */,
 				74994F671E8EFADA003372BF /* ViewController.swift in Sources */,
+				74B40C6D1E8F123600A2E0C1 /* ReviewViewController.swift in Sources */,
 				7492C7381E8EFBF60070956A /* File.swift in Sources */,
+				74B178931E8F0CC9009ACB47 /* ReviewCellTableViewCell.swift in Sources */,
 				74994F651E8EFADA003372BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +840,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PZ7B25RE27;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "IBM Watson/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-Watson";
@@ -642,6 +858,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PZ7B25RE27;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "IBM Watson/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-Watson";

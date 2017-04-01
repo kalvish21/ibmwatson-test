@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,6 +56,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXk-Xa-uno" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-319.19999999999999" y="-156.07196401799101"/>
+        </scene>
+        <!--Review View Controller-->
+        <scene sceneID="llj-eV-eE2">
+            <objects>
+                <viewController storyboardIdentifier="reviews" id="eea-xp-89F" customClass="ReviewViewController" customModule="IBM_Watson" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e38-QC-TQj"/>
+                        <viewControllerLayoutGuide type="bottom" id="oWb-gm-EUe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d4B-CV-vQE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwL-rj-FlL">
+                                <rect key="frame" x="24" y="28" width="343" height="569"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sentiment:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7u-nE-6tG">
+                                <rect key="frame" x="24" y="626" width="90" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="PR1-xU-5uW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hQ-go-pbB">
+                                <rect key="frame" x="116" y="647" width="251" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oWb-gm-EUe" firstAttribute="top" secondItem="M7u-nE-6tG" secondAttribute="bottom" constant="20" id="2Le-UC-Vki"/>
+                            <constraint firstItem="8hQ-go-pbB" firstAttribute="leading" secondItem="M7u-nE-6tG" secondAttribute="trailing" constant="2" id="3FY-tD-D3r"/>
+                            <constraint firstItem="8hQ-go-pbB" firstAttribute="trailing" secondItem="d4B-CV-vQE" secondAttribute="trailingMargin" constant="8" id="3UB-SR-8vc"/>
+                            <constraint firstItem="IwL-rj-FlL" firstAttribute="trailing" secondItem="d4B-CV-vQE" secondAttribute="trailingMargin" constant="8" id="MOZ-9u-niq"/>
+                            <constraint firstItem="oWb-gm-EUe" firstAttribute="top" secondItem="8hQ-go-pbB" secondAttribute="bottom" constant="20" id="RFc-Tc-vJR"/>
+                            <constraint firstItem="M7u-nE-6tG" firstAttribute="leading" secondItem="d4B-CV-vQE" secondAttribute="leadingMargin" constant="8" id="gyg-39-w3D"/>
+                            <constraint firstItem="IwL-rj-FlL" firstAttribute="top" secondItem="e38-QC-TQj" secondAttribute="bottom" constant="8" id="sDm-pk-PVb"/>
+                            <constraint firstItem="8hQ-go-pbB" firstAttribute="top" secondItem="IwL-rj-FlL" secondAttribute="bottom" constant="50" id="vXO-t8-vjz"/>
+                            <constraint firstItem="IwL-rj-FlL" firstAttribute="leading" secondItem="d4B-CV-vQE" secondAttribute="leadingMargin" constant="8" id="vfc-Ir-T7m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reviewTextView" destination="IwL-rj-FlL" id="oPw-Nz-Xfe"/>
+                        <outlet property="sentimentLabel" destination="8hQ-go-pbB" id="b4t-b6-qR1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86Z-dP-DCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319.19999999999999" y="494.30284857571218"/>
         </scene>
     </scenes>
 </document>
